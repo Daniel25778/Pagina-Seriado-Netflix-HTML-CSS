@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/MicrosoftTeams-image.png");
+    background-color: #00000055;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+header {
+
+    background-color: #000000AA;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    user-select: none;
+    transition: all 1s;   
+}
+
+.links a:hover{
+   color: red;
+
+}
+
+.links ul {
+
+display: flex;
+gap: 20px;
+list-style-type: none;
+
+
+}
+
+.logo img {
+    width: 120px;
+}
+
+main{
+    padding: 25vh 10vw;
+    flex-grow: 1;
+}
+
+main h2{
+    font-size: 30px;
+}
+
+main h1{
+    font-size: 80px;
+    font-family: Helvetica;
+    color: #00000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(247, 247, 247);
+}
+
+main p{
+    font-size: 25px;
+    font-weight: 200;
+    max-width: 350px;
+    
+}
+.lenda {
+   transform: rotate(270deg);
+   color: red;
+   height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5 5vw;
+
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: row;
+}
+
+.sobreAtor{
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px #D81F26;
+    margin-right: 35px;
+    width: 150px;
+    font-style: italic;
+
+}
+
+.ator{
+    font-size: 15px;
+}
+
+.sobrePersonagem{
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px #D81F26;
+    margin-right: 35px;
+    width: 160px;
+    font-style: italic;
+
+
+}
+
+.sobreEntidade{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+
+}
+
+.entidade{
+    font-size: 15px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+main a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: goldenrod;
+    margin-top: 30px;
+    border-radius: 2px;
+    transition: all 1s;
+    
+}
+
+main a:hover{
+    
+    border: solid 1px goldenrod;
+    background-color: black;
+}
+
+footer{
+    text-align: center;
+    height: 30px;
+
+
+}
