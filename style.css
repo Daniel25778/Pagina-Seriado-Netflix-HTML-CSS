@@ -3,60 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     width: 100vw;
     height: 100vh;
     background-image: url("img/cidade-invisivel\ \(1\).jpg");
-    background-color: #00000055;
+    background-color: #00000050;
     background-blend-mode: darken;
-    background-size: cover;
-    background-position: right top;
+    background-size: cover; 
+    background-position: top;
     display: flex;
     flex-direction: column;
     font-family: 'Karla', sans-serif;
     color: white;
 }
 
-header {
-
-    background-color: #000000AA;
-    height: 80px;
+header{
+    background-color: #00000090;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10vw;
+    padding: 0vh 5vw; /*0 vale para cima e para baixo e o 10vw vale para direita e esquerda*/
+}
+
+.logo img{
+    width: 120px;
+    user-select: none;
+}
+
+.links ul{
+    gap: 20px; 
+    list-style-type: none; /* Tirar as bolinhas dos tópicos */
 }
 
 .links a{
+    text-decoration: none; /* Tira o sublinhado e os efeitos de mudar a cor depois de clicar */
     color: white;
-    text-decoration: none;
-    font-size: 20px;
-    user-select: none;
-    transition: all 1s;   
+    user-select: none; /* Fazer com que o usuário não consiga selecionar os links */
+    transition: all .5s;
 }
 
 .links a:hover{
-   color: red;
-
+    color: gray;
 }
 
-.links ul {
-
-display: flex;
-gap: 20px;
-list-style-type: none;
-
-
+.home{
+    font-size: 25px;
 }
 
-.logo img {
-    width: 120px;
+.lendas{
+    font-size: 25px;
 }
+
+.trailer{
+    font-size: 25px;
+}
+
+.sobre{
+    font-size: 25px;
+}
+
 
 main{
-    padding: 25vh 10vw;
-    flex-grow: 1;
+    padding: 20vh 10vh;
+    flex-grow: 6;
+    
 }
 
 main h2{
@@ -64,42 +75,39 @@ main h2{
 }
 
 main h1{
-    font-size: 70px;
+    font-size: 60px;
 }
 
 main p{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 main a{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     text-decoration: none;
+    color: white;
     font-size: 20px;
     width: 200px;
     height: 50px;
-    background-color: goldenrod;
+    background-color: gold;
     margin-top: 30px;
-    border-radius: 2px;
-    transition: all 1s;
-    
+    border-radius: 3px;
+    user-select: none;
+    transition: all .5s;
 }
-
 main a:hover{
-    
-    border: solid 1px goldenrod;
+    border: solid 1px #b7b91e;
     background-color: black;
 }
 
 footer{
+    /*background-color: teal;*/
     text-align: center;
-    height: 40px;
-
-
+    height: 50px;    
 }
 
 .butterfly{
@@ -108,15 +116,14 @@ footer{
     top: 90vh;
     left: 90vw;
     filter: brightness(10%);
-    animation: voar 20s linear infinite;
+    animation: voar 20s infinite;
 }
 
 @keyframes voar {
-    0%{
+    0% {
         transform: translate(0,0);
     }
     100%{
-        transform: translate(-90vw,-90vh);
+        transform: translate(-90vw, -90vh);
     }
-    
 }
